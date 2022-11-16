@@ -13,3 +13,29 @@
  *= require_tree .
  *= require_self
  */
+
+ .container {
+  text-align: center;
+ }
+
+ .btn {
+  margin-bottom: 25px;
+  margin-top: 15px;
+ }
+
+ .btn a {
+  color: white;
+  text-decoration: none;
+ }
+
+ .btn a:hover {
+  color: white;
+ }
+
+ li {
+  list-style: none;
+ }
+
+ .rating > div {
+  padding-right: 15px;
+ }

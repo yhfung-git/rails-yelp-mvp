@@ -7,14 +7,12 @@
 #   Character.create(name: "Luke", movie: movies.first)
 require 'faker'
 
-nationality = %w[chinese italian japanese french belgian]
-
 puts 'Cleaning database...'
 Restaurant.destroy_all
 
 puts 'Creating restaurants...'
 5.times do
-  restaurants = Restaurant.create!(name: Faker::Restaurant.name, address: Faker::Address.street_address, phone_number: Faker::PhoneNumber.phone_number, category: nationality.sample)
+  restaurants = Restaurant.create!(name: Faker::Restaurant.name, address: Faker::Address.street_address, phone_number: Faker::PhoneNumber.phone_number, category: CATEGORY.sample)
 end
 
 # [dishoom, pizza_east].each do |attributes|
